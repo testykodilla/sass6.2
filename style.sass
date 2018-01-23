@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+$droid: "Droid-sans", sans serif
+$base1: #450C08
+$base2: #97635F
+
+body 
+	margin: 0
+	box-sizing: border-box
+
+
+header 
+	height: 80px
+	background-color: $base
+
+
+.container 
+	width: 100%
+	max-width: 1200px
+	margin: 0 auto
+
+
+header>nav>ul 
+	margin: 0
+	padding: 0
+	list-style-type: none
+	float: right
+	font: $droid
+
+
+header
+	a 
+		text-decoration: none
+		color: $base2
+
+
+nav:after 
+	content: ""
+	display: table
+	clear: both
+
+
+header>nav>img 
+	height: 80px
+	margin-left: 20px
+
+
+li 
+	display: inline-block
+	width: auto
+	height: 80px
+	font-size: 25px
+	padding: 27.5px
+	box-sizing: border-box
+	text-transform: uppercase
+	text-align: center
+
+$base3: 714441
+
+header li:hover 
+	color: $base3
+
+
+.hero 
+	height: 100vh
+	background-size: cover
+	background-image: url("https://i.imgur.com/sSoIbMz.jpg")
+
+$base4: rgba(220, 220, 220, 0.5)
+
+.slogan 
+	display: inline-block
+	float: right
+	max-width: 800px
+	margin-top: 50vh
+	padding: 0 30px
+	color: $base4
+
+
+.hero h1,
+.hero h2 
+	color: $base1
+	opacity: 0.9
+	font: $droid
+	font-size: 2.30em
+
+
+.hero h1 
+	opacity: 0.95
+	font-size: 2.6em
+	line-height: 10px
+	padding-top: 14px
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+.row:before,
+.row:after 
+	content:""
+	display: table 
+	clear: both;
+ 
+
+ .row 
+ 	text-align: center
+ 
+
+ .korzysci 
+ 	width: 100%
+ 	margin: 0 auto
+ 	padding: 50px 0 30px 0
+ 	background-color: #97635F
+ 	font: $droid
+ 
+
+ .korzysci p 
+ 	font-weight: bold
+ 
+
+ [class*="col-"] 
+ 	float: left
+ 	min-height: 1px
+ 
+
+.kill i
+	font-size: 3em
+	background-color: $base3
+	border-radius: 50%
+	padding: 15px
+	color: $base4
+	transition: 0.2s
+	text-align: center
+	&:hover
+		color: $base2;
+		background-color: $base4
+		transform: scale(1.20)
+
+
+.starve i 
+	font-size: 2.8em
+	background-color: $base1
+	border-radius: 50%
+	padding: 15px
+	color: $base4
+	transition: 0.2s
+	&:hover
+		color: $base2
+		background-color: $base3
+		transform: scale(1.10)
+
+
+.suck i 
+	font-size: 2.9em
+	background-color: $base1
+	border-radius: 50%
+	padding: 15px
+	color: $base4
+	transition: 0.2s
+	&:hover
+		color: $base2
+		background-color: $base4
+		transform: scale(1.10)	
+
+.kill,
+.starve,
+.suck 
+	color: $base4;
+
+
+.worlds h1 
+	font-family: $droid
+	text-align: center
+	color: $base2
+	padding: 0
+    margin: 0
+    text-shadow: 3px 3px 2px rgba(45, 38, 32, 0.81)
+
+
+.worlds 
+	background-color: $base4
+	padding: 60px 0 40px
+
+
+.worlds col-3 
+	float: left
+	height: 100%
+
+
+.worlds img
+	height: 25vh
+	width: 100%
+	object-fit: cover
+	vertical-align: bottom
+
+
+.worlds .row 
+	padding-top: 50px
+
+$ubuntu: 'Ubuntu', sans-serif
+.worlds p 
+	font-size: 1.5em
+	text-align: center
+	color: $base4
+	font: $ubuntu
+
+
+.mirrodin,
+.tarkir,
+.dragon-tarkir,
+.kamigawa,
+.dominaria,
+.dominaria-2,
+.esper,
+.lorwyn 
+	transition: ease-out .4s
+	color: transparent
+	z-index: 0
+
+
+.mirrodin i,
+.tarkir i,
+.dragon-tarkir i,
+.kamigawa i,
+.dominaria i,
+.dominaria-2 i,
+.esper i,
+.lorwyn i {
+	position: absolute
+	top: 50%
+	left: 50%
+
+
+.ikona 
+	transform: translate(-50px)
+	font-size: 2em
+	z-index: 307
+
+
+.ikona-2 
+	transform: translate(50px)
+	font-size: 2em
+	z-index: 307
+
+
+.mirrodin:hover,
+.tarkir:hover,
+.dragon-tarkir:hover,
+.kamigawa:hover,
+.dominaria:hover,
+.dominaria-2:hover,
+.esper:hover,
+.lorwyn:hover 
+	opacity: 0.9;
+	transform: scale(1.1)
+	z-index: 300
+	color: $base1
+	filter: brightness(70%)
+
+
+.worek 
+	width: 75%
+	margin: 0 auto
+
+.foes img 
+	object-fit: cover
+	box-sizing: border-box
+	border-radius: 50%
+	width: 100%
+	padding: 3px
+	z-index: 0
+	transition: ease-out 0.4s
+
+
+.foes h1 
+	margin-top: 0
+	color: $base3
+	font: $ubuntu
+	text-align: center
+	font-size: 2.3em
+	padding: 60px 0 20px 0
+
+
+.kontener 
+	width: 85%
+	margin: 0 auto
+
+
+.foes 
+	background-color: $base4
+
+
+.foes h3 
+	color: $base4 
+	font: $ubuntu
+	text-align: center
+
+
+.beleren :hover,
+.tezzeret :hover,
+.karn :hover,
+.yawgmoth :hover 
+	transform: scale(1.2)
+	z-index: 200
+
+
+.devastation img 
+	object-fit: cover
+	width: 100%
+	height: 300%
+
+
+.devastation 
+	padding: 60px 40px
+	font-size: 2em
+	font: $ubuntu
+	background-color: $base3
+	color: $base4
+	box-sizing: border-box
+
+
+.gatewatch 
+	transform: translate(-30px)
+
+
+.cyferki 
+	color: $base1
+	padding: 60px 40px
+	font-size: 2em
+	font: $ubuntu
+	background-color: $base4
+
+
+
+.nr 
+	color: $base3
+	font-size: 3em
+	font-weight: bold
+
+
+.devour 
+	transform: translate(-10px)
+
+
+footer 
+	color: $base1
+	padding: 60px 40px
+	font-size: 1em;
+	font: $ubuntu;
+	background-color: $base4
+	box-sizing: border-box
+
+
+.social 
+	margin: 0 auto
+	width: 500px
+	text-align: center
+	padding: 50px
+
+
+.icon-btn 
+	height: 75px
+	width: 75px
+	border: 0
+	background-color: #FFFFFF
+	margin: 10px
+	border-radius: 50%
+	cursor: pointer
+	font-size: 40px
+	transition: .3s
+	&:hover 
+		transform: scale(1.10)
+
+
+.twit 
+	color: $base1
+	&:hover 
+		background-color: $base4
+		color: white
+
+.face
+	color: $base2
+	&:hover
+		background-color: #3B5998
+		color: white
+
+.goog 
+	color: $base3
+	&:hover
+		background-color: #DB5A3C
+		color: white
+
+.inst
+	@extend .goog 
+	color: $base4
+
+
+.gith 
+	@extend .goog 
+	color: #4183C4
+
+
+footer h1, 
+footer h3 
+	font-weight: bold
+	text-transform: uppercase
+
+
+footer p 
+	font-size: 1.5em
+
+
+.mail 
+	font-size: 1.2em
+
+
+.copyright {
+	color: #240000
+	font: $ubuntu
+	background-color: $base1
+ 	padding: 4px 0
+	font-size: 0.7em
+	text-align: center
+
+
+.touch h3, .touch p, .about-me p 
+	margin-top: 18px
+	font-size: 18px
+
+
+.cyferki .row 
+	width: 75%
+	margin: 0 auto
+
+
+@media (max-width: 1199px) 
+	header>nav>ul 
+		float: none;
+	
+
+	header li 
+		display: block;
+	
+
+	header>nav>img
+		width: 50vw;
+		margin: 0 auto;
+		display: block;
+		height: auto;
+	
+
+	header 
+		height: auto;
+	
+
+	.hero 
+		background-position: center
+		background-repeat: no-repeat
+	
+
+	.worlds img 
+		height: 40vh
+	
+    
+    .gatewatch 
+    	text-align: center
+    	transform: none
+    	margin-top: 8vh
+    
+
+    .about-me 
+    	display: none
+    
+
+    .touch 
+    	font-size: 0.4em
+    
+
+    .touch h1 
+    	font-size: 4em
+    
+
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+
+@media (max-width: 767px)
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
